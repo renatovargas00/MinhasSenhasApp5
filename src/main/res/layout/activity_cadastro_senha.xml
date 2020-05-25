@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CadastroSenhaActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/cadastroSenhaView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="20dp"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tituloTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cadastro de Senha"
+            android:textColor="@color/colorBackground"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/loginButton"
+            android:layout_below="@+id/WelcomeTextView"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/cadNomeSenhaEditTextLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nome da Senha"
+                android:textColor="@color/colorTextView"
+                android:textColorHint="@color/colorAccent"
+                android:textSize="15sp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/cadNomeSenhaEditTextInput"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/cadUsuarioEditTextLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Usuário"
+                android:textColor="@color/colorTextView"
+                android:textColorHint="@color/colorAccent"
+                android:textSize="15sp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/cadUsuarioEditTextInput"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/cadSenhaEditTextLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:hint="Senha"
+                android:textColor="@color/colorTextView"
+                android:textColorHint="@color/colorAccent"
+                android:textSize="15sp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/cadSenhaEditTextInput"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/cadUrlEditTextLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:hint="URL ou Site"
+                android:textColor="@color/colorTextView"
+                android:textColorHint="@color/colorAccent"
+                android:textSize="15sp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/cadUrlEditTextInput"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/cadObservacaoEditTextLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:hint="Observação"
+                android:textColor="@color/colorTextView"
+                android:textColorHint="@color/colorAccent"
+                android:textSize="15sp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/cadObservacaoEditTextInput"
+                    android:lines="5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/loginButton"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/button_drawable"
+            android:onClick="cadastrarSenha"
+            android:text="Cadastrar Nova Senha"
+            android:textAllCaps="false"
+            android:textColor="@color/colorAccent"
+            android:textSize="16sp" />
+
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
